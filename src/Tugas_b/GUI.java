@@ -1,18 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Tugas_b;
 
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author eL
- */
+
 public class GUI extends javax.swing.JFrame {
     Identitasruangkelas id = new Identitasruangkelas();
     Kondisiruangkelas kon_RK = new Kondisiruangkelas();
@@ -54,13 +47,6 @@ public class GUI extends javax.swing.JFrame {
         fakultas = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         Kondisi = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        nama1 = new javax.swing.JTextField();
-        lokasi1 = new javax.swing.JTextField();
-        fakultas1 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(600, 680));
@@ -110,7 +96,7 @@ public class GUI extends javax.swing.JFrame {
         });
         Login.add(cancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, -1, -1));
 
-        getContentPane().add(Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 370, 270));
+        getContentPane().add(Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 370, 270));
 
         Identitas.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Identitas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -139,27 +125,6 @@ public class GUI extends javax.swing.JFrame {
 
         Kondisi.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Kondisi.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel7.setText("Nama Ruangan");
-        Kondisi.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, -1, -1));
-
-        jLabel8.setText("Lokasi");
-        Kondisi.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 193, -1, -1));
-
-        jLabel9.setText("Fakultas");
-        Kondisi.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 236, -1, -1));
-        Kondisi.add(nama1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, 190, -1));
-        Kondisi.add(lokasi1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 190, -1));
-        Kondisi.add(fakultas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 190, -1));
-
-        jButton2.setText("Next");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        Kondisi.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, -1, -1));
-
         getContentPane().add(Kondisi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 620, 420));
 
         pack();
@@ -210,10 +175,6 @@ public class GUI extends javax.swing.JFrame {
         Identitas.setVisible(false);
        
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
     private void close(){
         WindowEvent winClosing = new WindowEvent(this, WindowEvent.WINDOW_CLOSING);
         Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(winClosing);
@@ -247,6 +208,8 @@ public class GUI extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+
+            @Override
             public void run() {
                 new GUI().setVisible(true);
             }
@@ -259,22 +222,15 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JPanel Login;
     private javax.swing.JButton cancel;
     private javax.swing.JTextField fakultas;
-    private javax.swing.JTextField fakultas1;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField lokasi;
-    private javax.swing.JTextField lokasi1;
     private javax.swing.JTextField nama;
-    private javax.swing.JTextField nama1;
     private javax.swing.JPasswordField pass;
     private javax.swing.JButton submit;
     private javax.swing.JTextField user;
